@@ -105,5 +105,15 @@ namespace GBHPIM
         {
             return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
         }
+
+        public Task PasswordSignInAsync(string email, string password, bool rememberMe, bool shouldLockout)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task SignInAsync(ApplicationUser user, bool isPersistent, bool rememberBrowser)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

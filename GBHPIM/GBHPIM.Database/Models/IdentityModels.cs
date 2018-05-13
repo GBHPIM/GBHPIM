@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using GBHPIM.Database.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -29,5 +30,9 @@ namespace GBHPIM.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<Parent> Parent { get; set; }
+        public DbSet<Children> Children { get; set; }
+        public DbSet<School> School { get; set; }
+        public DbSet<Car> Car { get; set; }
     }
 }

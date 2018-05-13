@@ -31,5 +31,17 @@ namespace GBHPIM.Controllers
         {
             return View();
         }
+        public ActionResult FAQs()
+        {
+            return View();
+        }
+        public ActionResult Blog()
+        {
+            return View();
+        }
+        public ActionResult Safty()
+        {
+            return View();
+        }
     }
 }

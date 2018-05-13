@@ -26,5 +26,10 @@ namespace GBHPIM.Controllers
 
             return View();
         }
+
+        public ActionResult DriverPage()
+        {
+            return View();
+        }
     }
 }

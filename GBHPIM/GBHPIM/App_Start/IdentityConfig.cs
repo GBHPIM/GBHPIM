@@ -54,7 +54,7 @@ namespace GBHPIM
                 msg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
                 msg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
 
-                SmtpClient smtpClient = new SmtpClient("Ahmed.abdulrazzaq44@gmail.com", Convert.ToInt32(587));
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", Convert.ToInt32(587));
                 System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("joe@contoso.com", "XXXXXX");
                 smtpClient.Credentials = credentials;
                 smtpClient.EnableSsl = true;
